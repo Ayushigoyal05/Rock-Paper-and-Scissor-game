@@ -1,0 +1,24 @@
+import random
+lst=["Rock","Paper","Scissor"]
+print("Rule of the game Rock vs paper-> paper wins \nRock vs scissor-> Rock wins \nPaper vs scissor-> scissor wins")
+c=random.choice(lst)
+
+q=input("Enter your choice : ")
+print("computer's choice :",c)
+if(q==c):
+    print("tie")
+else:
+    if(q=="Rock" and c==lst[1]) or (q=="Paper" and c==lst[2]) or (q=="Scissor" and c==lst[0]):
+        print("computer win")
+    elif(q=="Rock" and c==lst[2]) or (q=="Paper" and c==lst[0]) or (q=="Scissor" and c==lst[1]):
+        print("user win")
+   # elif(q=="Paper" and c==lst[0]):
+    #    print("user win")
+    #elif(q=="Paper" and c==lst[2]):
+        #print("computer win")
+   # elif(q=="Scissor" and c==lst[0]):
+    #    print("computer win")
+   # elif(q=="Scissor" and c==lst[1]):
+     #   print("user win")
+    else:
+        print("Invalid input")
